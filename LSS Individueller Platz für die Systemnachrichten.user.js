@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LSS Individueller Platz für die Systemnachrichten
 // @namespace    www.leitstellenspiel.de
-// @version      1.0
+// @version      1.1
 // @description  Erweitert die Anzeige von Systemnachrichte.
 // @author       MissSobol
 // @match        https://www.leitstellenspiel.de/messages
@@ -25,7 +25,7 @@
     }
 
     // Warte auf das Laden der Seite
-    window.addEventListener('load', function() {
+    //window.addEventListener('load', function() {
         // Finde das Nachrichtencontainer-Element
         var container = document.querySelector('.system_messages_content_container');
 
@@ -39,5 +39,5 @@
         if (container) {
             adjustMessageContainer(container);
         }
-    });
+    ;
 })();
